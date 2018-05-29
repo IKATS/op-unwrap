@@ -1,0 +1,55 @@
+[
+  {
+    "family": "Preprocessing_TS__Transforming",
+    "name": "unwrap",
+    "label": "Unwrap",
+    "description": "Unwrap phase by changing absolute gap greater than discontinuity"
+  },
+  {
+    "name": "unwrap",
+    "label": "Unwrap",
+    "description": "Unwrap phase by changing absolute gap greater than discontinuity",
+    "algorithm": "unwrap",
+    "entry_point": "ikats.algo.core.unwrap.unwrap::unwrap_ts_list",
+    "inputs": [
+      {
+        "name": "ts_list",
+        "label": "TS list",
+        "description": "List of TS to unwrap",
+        "type": "ts_list"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "unit",
+        "description": "Angle unit of the provided TS (default value is radian)",
+        "type": "list",
+        "label": "Unit",
+        "default_value": "Radians",
+        "domain_of_values": "[\"Radians\",\"Degrees\"]"
+      },
+      {
+        "name": "discontinuity",
+        "description": "Maximum discontinuity between values expressed with the same unit as \"Angle unit\". Example in radian: \"pi\", in degrees: \"180\"",
+        "type": "text",
+        "label": "Discontinuity",
+        "default_value": null
+      },
+      {
+        "name": "fid_pattern",
+        "description": "Python pattern determining format of output functional identifiers. Example : %(fid)s__unwrap where '%(fid)s' is the Functional Identifier of the original time series.",
+        "type": "text",
+        "label": "FuncId pattern",
+        "default_value": "%(fid)s__unwrap"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ts_list",
+        "label": "TS list",
+        "description": "List of unwrapped TS (same order as input)",
+        "type": "ts_list"
+      }
+    ]
+  }
+]
