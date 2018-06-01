@@ -10,7 +10,7 @@
     "label": "Unwrap",
     "description": "Unwrap phase by changing absolute gap greater than discontinuity",
     "algorithm": "unwrap",
-    "entry_point": "ikats.algo.core.unwrap.unwrap::unwrap_ts_list",
+    "entry_point": "op-unwrap.unwrap::unwrap_ts_list",
     "inputs": [
       {
         "name": "ts_list",
