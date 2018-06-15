@@ -23,12 +23,12 @@ import numpy as np
 
 from numpy import pi as pi
 
-from ikats.algo.core.unwrap import unwrap_tsuid
-from ikats.algo.core.unwrap.unwrap import unwrap_ts_list, TSUnit
+from ikats.algo.unwrap import unwrap_tsuid
+from ikats.algo.unwrap.unwrap import unwrap_ts_list, TSUnit
 from ikats.core.resource.api import IkatsApi
 
 # Logger definition
-LOGGER = logging.getLogger('ikats.algo.core.unwrap.unwrap')
+LOGGER = logging.getLogger('ikats.algo.unwrap.unwrap')
 # Log format
 LOGGER.setLevel(logging.DEBUG)
 FORMATTER = logging.Formatter('%(asctime)s:%(levelname)s:%(funcName)s:%(message)s')
