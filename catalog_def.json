@@ -26,7 +26,6 @@
       "description": "Maximum discontinuity between values expressed with the same unit as \"Angle unit\". Example in radian: \"pi\", in degrees: \"180\"",
       "type": "text",
       "label": "Discontinuity",
-      "default_value": null
     },
     {
       "name": "fid_pattern",
