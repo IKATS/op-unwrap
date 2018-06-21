@@ -19,13 +19,13 @@
       "type": "list",
       "label": "Unit",
       "default_value": "Radians",
-      "domain_of_values": "[\"Radians\",\"Degrees\"]"
+      "domain": "['Radians','Degrees']"
     },
     {
       "name": "discontinuity",
       "description": "Maximum discontinuity between values expressed with the same unit as \"Angle unit\". Example in radian: \"pi\", in degrees: \"180\"",
       "type": "text",
-      "label": "Discontinuity",
+      "label": "Discontinuity"
     },
     {
       "name": "fid_pattern",
