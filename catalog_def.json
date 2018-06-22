@@ -3,7 +3,7 @@
   "label": "Unwrap",
   "description": "Unwrap phase by changing absolute gap greater than discontinuity",
   "family": "Preprocessing_TS__Transforming",
-  "entry_point": "op-unwrap.unwrap::unwrap_ts_list",
+  "entry_point": "unwrap.unwrap::unwrap_ts_list",
   "inputs": [
     {
       "name": "ts_list",
